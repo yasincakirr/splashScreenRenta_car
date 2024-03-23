@@ -93,11 +93,12 @@
             android:id="@+id/button2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:backgroundTint="#000"
-            android:text="GO"
-            android:textColor="#FFFFFF"
             android:layout_marginTop="5dp"
-            android:layout_marginBottom="5dp"/>
+            android:layout_marginBottom="5dp"
+            android:backgroundTint="#000"
+            android:onClick="giris"
+            android:text="GO"
+            android:textColor="#FFFFFF" />
 
 
         <Button

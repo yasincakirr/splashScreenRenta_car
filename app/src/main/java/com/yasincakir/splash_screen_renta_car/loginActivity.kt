@@ -7,6 +7,7 @@ import android.view.View
 import android.view.animation.Animation
 import android.view.animation.AnimationUtils
 import kotlinx.android.synthetic.main.activity_login.*
+import kotlinx.android.synthetic.main.activity_login.view.*
 
 class loginActivity : AppCompatActivity() {
 
@@ -28,6 +29,39 @@ class loginActivity : AppCompatActivity() {
 
 
     }
+
+
+    fun giris(view : View){
+
+
+        if(username_til.username.text.toString() == ""){
+
+            username_til.error="Metin Boş Dödürülemez"
+            username_til.isErrorEnabled=true
+
+        }
+        else{
+            username_til.isErrorEnabled=false
+        }
+
+
+        if(password_til.password.text.toString() == "")
+        {
+
+            password_til.error="Metin Boş Döndürülemez"
+            password_til.isErrorEnabled=true
+        }
+
+
+        else{
+            password_til.isErrorEnabled=false
+        }
+
+    }
+
+
+
+
 
 
     fun newUser(view : View){
