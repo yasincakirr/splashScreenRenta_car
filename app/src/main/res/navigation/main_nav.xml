@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_nav"
+    app:startDestination="@id/loginFragment">
+
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.yasincakir.splash_screen_renta_car.ui.loginFragment"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login" >
+        <action
+            android:id="@+id/kayıtGecis"
+            app:destination="@id/anasayfaFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/anasayfaFragment"
+        android:name="com.yasincakir.splash_screen_renta_car.ui.anasayfaFragment"
+        android:label="fragment_anasayfa"
+        tools:layout="@layout/fragment_anasayfa" >
+        <action
+            android:id="@+id/geriDonus"
+            app:destination="@id/loginFragment" />
+    </fragment>
+</navigation>

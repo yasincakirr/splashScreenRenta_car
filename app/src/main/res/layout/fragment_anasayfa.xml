@@ -1,13 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity2"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.anasayfaFragment"
     android:orientation="vertical"
     android:padding="20dp">
+
+
+
 
 
     <ImageView
@@ -52,7 +54,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:id="@+id/fullname"
-                 />
+                />
         </com.google.android.material.textfield.TextInputLayout>
 
 
@@ -139,6 +141,7 @@
 
 
         <Button
+            android:id="@+id/buttonLogin"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_gravity="center"
@@ -151,9 +154,6 @@
 
 
         </Button>
-
-
-
 
     </LinearLayout>
 </LinearLayout>
