@@ -1,4 +1,4 @@
-package com.yasincakir.splash_screen_renta_car.ui
+package com.yasincakir.splash_screen_renta_car.ui.fragment
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -32,6 +32,10 @@ class loginFragment : Fragment() {
             Navigation.findNavController(it).navigate(R.id.kayıtGecis)
         }
 
+
+        binding.button2.setOnClickListener {
+            Navigation.findNavController(it).navigate(R.id.arabaListesiGecis)
+        }
 
         return binding.root
     }

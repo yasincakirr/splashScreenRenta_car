@@ -7,20 +7,41 @@
 
     <fragment
         android:id="@+id/loginFragment"
-        android:name="com.yasincakir.splash_screen_renta_car.ui.loginFragment"
+        android:name="com.yasincakir.splash_screen_renta_car.ui.fragment.loginFragment"
         android:label="fragment_login"
         tools:layout="@layout/fragment_login" >
         <action
             android:id="@+id/kayıtGecis"
             app:destination="@id/anasayfaFragment" />
+        <action
+            android:id="@+id/arabaListesiGecis"
+            app:destination="@id/arabaListesiFragment" />
     </fragment>
     <fragment
         android:id="@+id/anasayfaFragment"
-        android:name="com.yasincakir.splash_screen_renta_car.ui.anasayfaFragment"
+        android:name="com.yasincakir.splash_screen_renta_car.ui.fragment.anasayfaFragment"
         android:label="fragment_anasayfa"
         tools:layout="@layout/fragment_anasayfa" >
         <action
             android:id="@+id/geriDonus"
             app:destination="@id/loginFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/arabaListesiFragment"
+        android:name="com.yasincakir.splash_screen_renta_car.ui.fragment.ArabaListesiFragment"
+        android:label="fragment_araba_listesi"
+        tools:layout="@layout/fragment_araba_listesi" >
+        <action
+            android:id="@+id/arabaDetayGecis"
+            app:destination="@id/arabaDetayFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/arabaDetayFragment"
+        android:name="com.yasincakir.splash_screen_renta_car.ui.fragment.ArabaDetayFragment"
+        android:label="fragment_araba_detay"
+        tools:layout="@layout/fragment_araba_detay" >
+        <argument
+            android:name="araba"
+            app:argType="com.yasincakir.splash_screen_renta_car.data.entity.Arabalar" />
     </fragment>
 </navigation>

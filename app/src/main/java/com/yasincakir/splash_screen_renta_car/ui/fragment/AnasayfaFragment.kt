@@ -1,4 +1,4 @@
-package com.yasincakir.splash_screen_renta_car.ui
+package com.yasincakir.splash_screen_renta_car.ui.fragment
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment

@@ -37,6 +37,8 @@ android {
     }
 }
 
+apply plugin: "androidx.navigation.safeargs.kotlin"
+
 dependencies {
 
     implementation 'androidx.appcompat:appcompat:1.5.1'
